@@ -1,7 +1,7 @@
 #if UNITY_ANDROID
 using UnityEngine;
-using GoogleARCore.Examples.Common;
-using GoogleARCore;
+//using GoogleARCore.Examples.Common;
+using UnityEngine.XR.ARCore;
 
 public class DetectedPlaneVisualizerExtender : MonoBehaviour {
 	public static bool flagVisible = true;
