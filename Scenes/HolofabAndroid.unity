@@ -190,7 +190,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PlanePrefab: {fileID: 4247086363419122874, guid: 7879c11ecaba35943a7e9cd7eed3aa5e,
     type: 3}
-  m_DetectionMode: 1
+  m_DetectionMode: -1
 --- !u!114 &1028669
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -768,6 +768,27 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 1100519701772121066, guid: ef5e21b13c6499944b1802671d86154a, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ef5e21b13c6499944b1802671d86154a, type: 3}
+--- !u!1 &683983820 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 31361062569100026, guid: 4afa700613cd6a0418c0ecd6c679c78e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1832637173}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &683983824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 683983820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71bed4e6de8b74e498fae3e73f857aec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnTrigger:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &829807553
 GameObject:
   m_ObjectHideFlags: 0
@@ -1021,6 +1042,27 @@ Transform:
   m_Father: {fileID: 1028667}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1120490051 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 485056765579753686, guid: 4afa700613cd6a0418c0ecd6c679c78e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1832637173}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1120490055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1120490051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71bed4e6de8b74e498fae3e73f857aec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnTrigger:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1270908118
 GameObject:
   m_ObjectHideFlags: 0
@@ -1393,11 +1435,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 829807559}
-    - target: {fileID: 2952721854642112842, guid: 4afa700613cd6a0418c0ecd6c679c78e,
-        type: 3}
-      propertyPath: m_PresetInfoIsWorld
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3798030945849454401, guid: 4afa700613cd6a0418c0ecd6c679c78e,
         type: 3}
       propertyPath: m_Name
@@ -1405,6 +1442,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4afa700613cd6a0418c0ecd6c679c78e, type: 3}
+--- !u!1 &1965721775 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8097633408749023943, guid: 4afa700613cd6a0418c0ecd6c679c78e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1832637173}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1965721779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1965721775}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71bed4e6de8b74e498fae3e73f857aec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnTrigger:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &2139020146
 GameObject:
   m_ObjectHideFlags: 0
@@ -1449,13 +1507,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab8609f2db95b174eaf2f22794de0779, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSensitivity: 0.5
   clickActionReference: {fileID: -830024508909220828, guid: 95cdc2413995e5548accf54ea0322c9c,
     type: 3}
   positionActionReference: {fileID: -2498832588178626190, guid: 95cdc2413995e5548accf54ea0322c9c,
     type: 3}
-  activePlaceable: {fileID: 0}
-  activeMovable: {fileID: 0}
+  gazableLayerMask:
+    serializedVersion: 2
+    m_Bits: 0
+  clickableLayerMask:
+    serializedVersion: 2
+    m_Bits: 0
   flagHitGaze: 0
   flagHitSelect: 0
 --- !u!1001 &89321516684823080
